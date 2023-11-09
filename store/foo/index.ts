@@ -1,5 +1,5 @@
-import { Module } from 'vuex'
-import { State } from '..'
+import type { Module } from 'vuex'
+import type { State } from '..'
 
 export interface ModuleFoo {
   foo: number

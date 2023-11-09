@@ -1,5 +1,5 @@
-import type { ActionTree } from 'vuex'
 import Vuex from 'vuex'
+import type { ActionTree } from 'vuex'
 import type { ModuleFoo } from './foo'
 
 export type State = {
