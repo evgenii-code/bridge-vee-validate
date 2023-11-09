@@ -1,28 +1,17 @@
 <template>
   <div>
-    <button @click="setFoo(foo + 1)">Increment</button>
-
-    <div>{{ foo }}</div>
+    <BaseStore />
   </div>
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
-import { mapGetters, mapMutations } from 'vuex'
+import BaseStore from '~/components/BaseStore.vue'
 
-export default Vue.extend({
+export default defineNuxtComponent({
   name: 'IndexPage',
 
-  computed: {
-    ...mapGetters({
-      foo: 'foo/foo',
-    }),
-  },
-
-  methods: {
-    ...mapMutations({
-      setFoo: 'foo/setFoo',
-    }),
+  components: {
+    BaseStore,
   },
 })
 </script>
