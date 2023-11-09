@@ -22,4 +22,10 @@ export default defineNuxtConfig({
   },
 
   components: true,
+
+  plugins: ['@plugins/rules.ts'],
+
+  build: {
+    transpile: ['vee-validate/dist/rules'],
+  },
 })
